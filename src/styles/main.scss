@@ -1,0 +1,43 @@
+@use 'hero';
+@use 'infos_bar';
+@use 'button';
+@use 'movie';
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: variables.$textColor;
+    list-style: none;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: variables.$textColorSecondary;
+    transition: background-color .5s ease;
+    z-index: 1;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}

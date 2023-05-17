@@ -1,0 +1,21 @@
+@use 'variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+
+    &--primary {
+        color: aliceblue;
+        background-color: variables.$textColorSecondary;
+        border: 2px solid variables.$textColor;
+    }
+
+    @media (max-width:640px) {
+        font-size: 14px;
+    }
+}
