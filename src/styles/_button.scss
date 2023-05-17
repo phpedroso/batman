@@ -12,7 +12,7 @@
     &--primary {
         color: aliceblue;
         background-color: variables.$textColorSecondary;
-        border: 2px solid variables.$textColor;
+        border: 1px solid variables.$textColor;
     }
 
     @media (max-width:640px) {
